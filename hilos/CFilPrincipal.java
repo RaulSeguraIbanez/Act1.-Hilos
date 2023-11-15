@@ -68,6 +68,6 @@ public class CFilPrincipal {
             }
         }
 
-        System.out.println("Proceso padre ha terminado después de todos los hijos.\n");
+        System.out.println("Proceso padre ha terminado.\n");
     }
 }
