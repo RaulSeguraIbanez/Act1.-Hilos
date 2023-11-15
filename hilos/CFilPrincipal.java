@@ -7,7 +7,7 @@ public class CFilPrincipal {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+//funcionalidad del menu
         mostrarMenu();
         int opcion = scanner.nextInt();
 
@@ -30,7 +30,7 @@ public class CFilPrincipal {
 
         scanner.close();
     }
-
+//menu
     private static void mostrarMenu() {
         System.out.println("Menú:");
         System.out.println("1. Proceso hijo termina antes que el padre");
@@ -40,7 +40,7 @@ public class CFilPrincipal {
         System.out.println("0. Salir");
         System.out.print("Seleccione una opción: ");
     }
-
+// aqui esta el ejercicio 4
     private static void iniciarMultiplesProcesos() {
         Scanner scanner = new Scanner(System.in);
 
