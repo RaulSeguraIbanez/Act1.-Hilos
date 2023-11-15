@@ -1,6 +1,7 @@
 package hilos;
 
 import java.util.Scanner;
+import java.util.*;
 
 public class CFilPrincipal {
     private static CFil hijo = new CFil("Hijo");
@@ -53,10 +54,11 @@ public class CFilPrincipal {
         }
 
         CFil[] hijos = new CFil[numProcesos];
+       int random = (int) (Math.random()*1000);
 
         for (int i = 0; i < numProcesos; i++) {
             hijos[i] = new CFil("Hijo" + i);
-            hijos[i].setTemporizacion(1000 / (i + 1));
+            hijos[i].setTemporizacion(1000 / (i + random));
             hijos[i].start();
         }
 
