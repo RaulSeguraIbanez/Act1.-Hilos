@@ -1,5 +1,5 @@
 package hilos;
 
-public class CFil {
-
+public class CFil extends Thread {
+	
 }
