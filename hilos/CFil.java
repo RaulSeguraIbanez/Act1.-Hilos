@@ -31,11 +31,19 @@ public class CFil extends Thread {
     }
 
     // Ejercicio 1.1: Temporización para que el proceso hijo termine antes que el padre
+    // Ejercicio 1.1: Temporización para que el proceso hijo termine antes que el padre
     public void ejercicio1_1() {
         setTemporizacion(500);
         start();
-        System.out.println("Proceso padre ha terminado.");
+        try {
+            join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        // Lógica del proceso padre
+        System.out.println("Proceso padre ha terminado después del hijo.");
     }
+
 
     // Ejercicio 1.2: Temporización para que el proceso hijo termine después que el padre
     public void ejercicio1_2() {
