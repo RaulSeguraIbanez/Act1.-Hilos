@@ -5,6 +5,12 @@ public class CFilPrincipal {
 		
 		CFil proceso1 = new CFil("proceso1");
 		
+		proceso1.seTemporizador(2000);
+		
+		System.out.println("Comienza el proceso padre");
+		
 		proceso1.start();
+		
+		System.out.println("Termina el proceso padre");
 	}
 }

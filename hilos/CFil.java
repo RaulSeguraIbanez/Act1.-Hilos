@@ -4,7 +4,7 @@ public class CFil extends Thread {
 	private int temporizador = 0;
 	private String nombre = "";
 	
-	public void setter(int temporizacion) {
+	public void seTemporizador(int temporizacion) {
 		this.temporizador = temporizacion;
 	}
 	
@@ -18,6 +18,15 @@ public class CFil extends Thread {
 	}
 	
 	public void run() {
-		
+		System.out.println(getName() + " Ha iniciado");
+
+        try {
+        	
+            Thread.sleep(temporizador);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(getName() + " Ha terminado");
 	}
 }
