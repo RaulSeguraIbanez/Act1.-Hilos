@@ -34,7 +34,6 @@ public class CFil extends Thread {
     public void ejercicio1_1() {
         setTemporizacion(500);
         start();
-        // Lógica del proceso padre
         System.out.println("Proceso padre ha terminado.");
     }
 
@@ -46,7 +45,6 @@ public class CFil extends Thread {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        // Lógica del proceso padre
         System.out.println("Proceso padre ha terminado después del hijo.");
     }
 
@@ -58,7 +56,6 @@ public class CFil extends Thread {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        // Lógica del proceso padre
         System.out.println("Proceso padre ha terminado después del hijo.");
     }
 }
